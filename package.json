@@ -1,0 +1,36 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-boost": "^0.1.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.10.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-apollo": "^2.0.4",
+    "react-circular-progressbar": "^0.8.0",
+    "react-dom": "^16.2.0",
+    "react-flip-move": "^3.0.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "tachyons": "^4.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "fmt": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\"",
+    "precommit": "lint-staged",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "fmt",
+      "git add"
+    ]
+  }
+}

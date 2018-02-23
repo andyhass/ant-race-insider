@@ -1,0 +1,16 @@
+.ant-details .ant-details--ant-image {
+  height: 100px;
+  width: 100px;
+}
+
+.ant-details .ant-details--progressbar {
+  width: 140px;
+}
+
+.ant-details .ant-details--progressbar .CircularProgressbar-path { 
+  stroke: #e68578; 
+}
+
+.ant-details .ant-details--progressbar .CircularProgressbar-text {
+  fill: #346992;
+}
