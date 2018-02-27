@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import createStore from './store';
+import { ApolloProvider as Provider } from 'react-apollo';
 import AntStatisticsContainer from './containers/AntStatisticsContainer/AntStatisticsContainer';
+import client from './client';
 
 class App extends Component {
   render() {
     return (
       <main className="avenir">
-        <Provider store={createStore()}>
+        <Provider client={client}>
           <AntStatisticsContainer />
         </Provider>
       </main>
